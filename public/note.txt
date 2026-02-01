@@ -1,7 +1,7 @@
 /**
  * @file: profile.config.ts
- * @author: Engineering Portfolio
- * @summary: A high-performance full-stack engineer.
+ * @author: Simerdeep Singh Gandhi
+ * @summary: A product-focused full-stack developer who builds independently and ships real features.
  */
 
 // --------------------------------------------------
@@ -10,51 +10,52 @@
 
 const TECH_STACK = {
   frontend: [
-    "React.js",    // 100%
-    "Next.js",     // 95%
-    "TailwindCSS", // 90%
-    "Three.js",    // 70%
+    "React.js",    // 100% [cite: 5, 36]
+    "Angular",     // 85% [cite: 36]
+    "TailwindCSS", // 90% [cite: 36]
+    "SCSS",        // 80% [cite: 36]
   ],
   backend: [
-    "Node.js",     // 90%
-    "PostgreSQL",  // 85%
-    "Redis",       // 75%
-    "Docker",      // 80%
+    "Node.js",     // 95% [cite: 5, 36]
+    "Express.js",  // 90% [cite: 36]
+    "MongoDB",     // 90% [cite: 5, 38]
+    "REST APIs",   // 95% [cite: 36]
   ],
-  tools: ["AWS", "Git", "Figma", "Linux"]
+  tools: ["Git", "Postman", "Cloudinary", "Firebase"] // [cite: 38, 39]
 };
 
 // --------------------------------------------------
-// 2. EXPERIENCE LOG (Reverse Chronological)
+// 2. EXPERIENCE LOG (Project-Based History)
 // --------------------------------------------------
 
 class ProfessionalHistory {
   
-  /** * CURRENT ROLE
-   * @period 2023 - Present 
+  /** * MCP-POWERED TERMINAL AI ASSISTANT
+   * @period Aug 2025 [cite: 29]
    */
-  public async TechFlow_Systems(): Promise<Impact> {
-    const role = "Senior Full-Stack Engineer";
+  public async MCP_Assistant(): Promise<Impact> {
+    const role = "Full Stack Developer"; // [cite: 28]
     
     // Key Achievements
-    const optimized = await api.optimize({ strategy: "Redis Caching" });
-    const latencyReduction = "40%";
+    const automation = "Twitter posting, trending hashtags, and file handling"; // [cite: 31]
+    const core = "Built with Node.js, Gemini AI, and MCP"; // [cite: 30]
     
-    const leadership = this.mentor(["Jr. Dev 1", "Jr. Dev 2", "Jr. Dev 3"]);
-    const architecture = "Monolith -> Microservices Migration";
+    const architecture = "Modular MCP tool server"; // [cite: 31]
+    const interface = "Interactive CLI client with conversational AI"; // [cite: 32]
     
-    return { role, optimized, architecture, leadership };
+    return { role, core, architecture, automation, interface };
   }
 
-  /** * PREVIOUS ROLE
-   * @period 2021 - 2023
+  /** * JOYTRIP (RIDE SERVICE APPLICATION)
+   * @period Jun 2024 - Jun 2025 [cite: 14, 15]
    */
-  public PixelPerfect_Studios(): void {
-    this.role = "Frontend Developer";
-    this.focus = "High-Fidelity Animations";
+  public JoyTrip_MERN(): void {
+    this.role = "Full Stack Developer"; // [cite: 12]
+    this.focus = "Real-time Distributed Applications"; // [cite: 5]
     
-    // Implemented GSAP scroll-triggers for 15+ clients
-    // Improved Lighthouse Performance Scores: 65 -> 98
+    // Streamlined city travel via WebSocket and MongoDB [cite: 13, 17]
+    // Enabled multi-location visits in a single booking [cite: 16]
+    // Solved data consistency and fault-tolerance challenges [cite: 17]
   }
 }
 
@@ -62,23 +63,21 @@ class ProfessionalHistory {
 // 3. COMPETITIVE ACHIEVEMENTS
 // --------------------------------------------------
 
-interface HackathonWin {
-  rank: number;
+interface Achievement {
+  rank?: string | number;
   event: string;
-  project: string;
+  detail: string;
 }
 
-const trophyCabinet: HackathonWin[] = [
+const trophyCabinet: Achievement[] = [
   {
-    rank: 1,
-    event: "Global AI Hackathon 2024",
-    project: "EcoVision (Computer Vision Waste Segregation)",
-    // Prize: $5,000
+    rank: "3rd Runner-up", // [cite: 43]
+    event: "Hack-Vision Hackathon", // [cite: 42]
+    detail: "Built a prototype web app in 10 hours with a team of 4", // [cite: 42]
   },
   {
-    rank: 500, // Top 500 Global
-    event: "Google Code Jam 2023",
-    project: "Algorithm Optimization (Dynamic Programming)",
+    event: "GFG 160 Days of DSA Challenge (2025)", // [cite: 41]
+    detail: "Solved 100+ DSA problems across core topics", // [cite: 41]
   }
 ];
 
@@ -87,8 +86,8 @@ const trophyCabinet: HackathonWin[] = [
 // --------------------------------------------------
 
 const education = new Map<string, string>([
-  ["Stanford University", "MS Computer Science (3.9 GPA)"],
-  ["MIT World Peace Univ", "B.Tech Information Tech (8.8 CGPA)"]
+  ["GLA University, Mathura", "Bachelor of Computer Applications (2022-2025)"], // [cite: 9, 14]
+  
 ]);
 
 export default new ProfessionalHistory();
@@ -98,8 +97,7 @@ export default new ProfessionalHistory();
 # TERMINAL OUTPUT
 # ---------------------------------------
 $ user --status
-> Status: Open to Opportunities
-> Location: Global / Remote
+> Status: Open to Opportunities [cite: 4]
+> Location: Agra, India [cite: 3]
 > Loading Assets... [||||||||||] 100%
 > Ready.
-```

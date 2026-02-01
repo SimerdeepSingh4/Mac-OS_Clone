@@ -177,7 +177,13 @@ function App() {
         ) : null
       )}
     </div>
-          <DesktopContextMenu position={desktopMenuPos} onClose={closeDesktopMenu} />
+          <DesktopContextMenu
+            position={desktopMenuPos}
+            onClose={closeDesktopMenu}
+            onAction={(action) => {
+              if (action === "changeWallpaper") setWallpaperPickerOpen(true);
+            }}
+          />
         </main>
 
         <Spotlight

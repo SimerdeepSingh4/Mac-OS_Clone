@@ -1,14 +1,28 @@
 import { createPortal } from "react-dom";
 import "./WallpaperPicker.scss";
 
+
+
 const WALLPAPERS = [
   { id: "mac", label: "Default", value: "url(/mac-wallpaper.jpg)" },
-  { id: "gradient-blue", label: "Blue Night", value: "linear-gradient(180deg, #0f0c29 0%, #302b63 50%, #24243e 100%)" },
-  { id: "gradient-sunset", label: "Sunset", value: "linear-gradient(135deg, #1a1a2e 0%, #16213e 40%, #0f3460 70%, #e94560 100%)" },
-  { id: "gradient-forest", label: "Forest", value: "linear-gradient(180deg, #0d1b0d 0%, #1b3d1b 40%, #2d5a27 100%)" },
-  { id: "gradient-midnight", label: "Midnight", value: "linear-gradient(180deg, #0a0a0f 0%, #1a1a2e 50%, #16213e 100%)" },
-  { id: "solid-dark", label: "Dark", value: "#1c1c1e" },
+  // ... your existing gradients
+  { 
+    id: "cyberpunk-girl", 
+    label: "Cyber Blue", 
+    value: "url(/mac-wallpaper2.jpg)" 
+  },
+  { 
+    id: "fuji-night", 
+    label: "Mount Fuji", 
+    value: "url(/mac-wallpaper3.jpeg)" 
+  },
+  { 
+    id: "vernazza-sunset", 
+    label: "Cinque Terre", 
+    value: "url(/mac-wallpaper4.jpeg)" 
+  },
 ];
+
 
 export default function WallpaperPicker({ open, onClose, currentWallpaper, onSelect }) {
   if (!open) return null;

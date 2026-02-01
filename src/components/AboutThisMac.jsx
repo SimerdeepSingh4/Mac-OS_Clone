@@ -34,6 +34,12 @@ export default function AboutThisMac({ open, onClose }) {
           </div> */}
         </div>
 
+        <div className="about-description">
+          <p>
+            This project is a web-based clone of the MacOS desktop environment, built using React and Vite. It aims to replicate the look and feel of MacOS, including the desktop, dock, and various UI elements. This is a personal project to showcase front-end development skills.
+          </p>
+        </div>
+
         <div>
           <button type="button" className="about-button" onClick={onClose}>
             OK
