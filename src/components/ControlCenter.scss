@@ -1,0 +1,114 @@
+.control-center-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 10001;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.control-center-panel {
+  position: fixed;
+  width: 280px;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(32px);
+  -webkit-backdrop-filter: blur(32px);
+  border-radius: 12px;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.08);
+  animation: controlCenterIn 0.2s ease;
+}
+
+@keyframes controlCenterIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.control-center-header {
+  margin-bottom: 0.75rem;
+}
+
+.control-center-title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.control-center-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.control-center-tile {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.control-center-tile-icon {
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+
+  &.brightness { background: rgba(255, 200, 100, 0.2); }
+  &.volume { background: rgba(100, 180, 255, 0.2); }
+}
+
+.control-center-tile-label {
+  font-size: 0.7rem;
+  color: var(--muted);
+}
+
+.control-center-slider {
+  width: 100%;
+  height: 4px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 2px;
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--text);
+    cursor: pointer;
+  }
+}
+
+.control-center-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.05);
+  }
+}
+
+.control-center-label {
+  color: var(--text);
+}
+
+.control-center-value {
+  color: var(--muted);
+  font-size: 0.8rem;
+}

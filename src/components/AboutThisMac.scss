@@ -1,0 +1,104 @@
+.about-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 100002;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: aboutFadeIn 0.2s ease;
+}
+
+@keyframes aboutFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.about-panel {
+  width: 100%;
+  max-width: 380px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(32px);
+  -webkit-backdrop-filter: blur(32px);
+  border-radius: 12px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.08);
+  padding: 2rem;
+  animation: aboutSlideIn 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes aboutSlideIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.about-logo {
+  width: 120px;
+  height: 80px;
+  margin-bottom: 0.75rem;
+  opacity: 0.95;
+}
+
+.about-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0 0 0.25rem 0;
+}
+
+.about-version {
+  font-size: 0.875rem;
+  color: var(--muted);
+  margin: 0;
+}
+
+.about-specs {
+  margin-bottom: 1.5rem;
+}
+
+.about-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  font-size: 0.9rem;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.about-label {
+  color: var(--muted);
+}
+
+.about-value {
+  color: var(--text);
+}
+
+.about-button {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--text);
+  font-size: 0.9rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 160ms ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.18);
+  }
+}

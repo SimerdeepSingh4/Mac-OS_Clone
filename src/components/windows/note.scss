@@ -1,0 +1,16 @@
+.note-window{
+  overflow-y: auto;
+  height: 100%;
+  padding: 1rem;
+  padding-bottom: 10rem;
+  font-size: 1.05rem;
+  font-family: 'SFMono-Regular', Menlo, Monaco, 'Courier New', monospace;
+
+  pre{
+    background-color: transparent !important;
+    padding: 0.6rem 0.8rem !important;
+    border-radius: 8px;
+  }
+
+  code{ font-size: 0.95rem; }
+}

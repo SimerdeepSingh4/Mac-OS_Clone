@@ -1,0 +1,119 @@
+/* Full-screen maximized window (under navbar) */
+.mac-window-full {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 0;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  transition: top var(--transition-smooth);
+}
+
+.mac-window-full .window {
+  border-radius: 12px 12px 0 0;
+  flex: 1;
+  min-height: 0;
+  box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.4);
+}
+
+.window {
+  cursor: auto;
+  background: #1c1c1e;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: rgb(168, 168, 168);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+  font-weight: 500;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.04);
+  transition: box-shadow var(--transition-fast);
+
+  .navs {
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    gap: 1rem;
+    background: rgba(0, 0, 0, 0.15);
+    flex-shrink: 0;
+
+    .dots {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+
+      .dot {
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: transform var(--transition-fast), filter var(--transition-fast);
+        border: none;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) inset;
+      }
+
+      .dot:hover {
+        transform: scale(1.08);
+      }
+
+      .red {
+        background: linear-gradient(180deg, #ff6259 0%, #e54942 100%);
+      }
+      .red:hover {
+        background: linear-gradient(180deg, #ff7b73 0%, #ff6259 100%);
+        filter: brightness(1.1);
+      }
+
+      .yellow {
+        background: linear-gradient(180deg, #ffbd2e 0%, #e5a020 100%);
+      }
+      .yellow:hover {
+        background: linear-gradient(180deg, #ffd04a 0%, #ffbd2e 100%);
+        filter: brightness(1.1);
+      }
+
+      .green {
+        background: linear-gradient(180deg, #28c840 0%, #20a832 100%);
+      }
+      .green:hover {
+        background: linear-gradient(180deg, #34e054 0%, #28c840 100%);
+        filter: brightness(1.1);
+      }
+    }
+
+    .title {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--muted);
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      user-select: none;
+    }
+  }
+
+  .main-content {
+    flex: 1;
+    min-height: 0;
+    overflow: auto;
+  }
+
+  *::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  *::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 4px;
+  }
+  *::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.18);
+  }
+}
