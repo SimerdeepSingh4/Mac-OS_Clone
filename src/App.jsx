@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { MinimizeAnimationProvider } from "./context/MinimizeAnimationContext";
 import Dock from "./components/Dock";
 import Navbar from "./components/Nav";
-import GitHub from "./components/windows/GitHub";
+import GitHub from "./components/windows/Github";
 import Note from "./components/windows/Note";
 import Resume from "./components/windows/Resume";
 import Spotify from "./components/windows/Spotify";

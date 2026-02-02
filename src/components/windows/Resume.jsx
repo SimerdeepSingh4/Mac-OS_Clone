@@ -1,6 +1,6 @@
 import React from 'react'
 import MacWindow from './MacWindow'
-import "./resume.css"
+import "./resume.scss"
 const Resume = ({windowName, setWindowState, windowProps}) => {
   return (
     <MacWindow windowName={windowName} setWindowState={setWindowState} windowProps={windowProps}>
