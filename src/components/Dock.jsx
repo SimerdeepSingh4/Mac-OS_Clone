@@ -113,11 +113,11 @@ const resetDock = () => {
         <div
           ref={(el) => { dockRefs.current.calendar = el; registerDockIcon?.("calendar", el); }}
           onClick={() => handleDockClick("calendar")}
-          className="icon calender"
+          className="icon calendar"
           title="Calendar"
           role="button"
         >
-          <img src="/doc-icons/calender.svg" alt="" />
+          <img src="/doc-icons/calendar.svg" alt="" />
           {windowsState.calendar && <span className="active-dot"></span>}
         </div>
 
