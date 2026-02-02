@@ -5,22 +5,12 @@ import "./WallpaperPicker.scss";
 
 const WALLPAPERS = [
   { id: "mac", label: "Default", value: "url(/mac-wallpaper.jpg)" },
-  // ... your existing gradients
-  { 
-    id: "cyberpunk-girl", 
-    label: "Cyber Blue", 
-    value: "url(/mac-wallpaper2.jpg)" 
-  },
-  { 
-    id: "fuji-night", 
-    label: "Mount Fuji", 
-    value: "url(/mac-wallpaper3.jpeg)" 
-  },
-  { 
-    id: "vernazza-sunset", 
-    label: "Cinque Terre", 
-    value: "url(/mac-wallpaper4.jpeg)" 
-  },
+  { id: "midnight-city", label: "Midnight City", value: "url(/mac-wallpaper2.jpg)" },
+  { id: "mount-fuji", label: "Mount Fuji", value: "url(/mac-wallpaper3.jpeg)" },
+  { id: "cinque-terre", label: "Cinque Terre", value: "url(/mac-wallpaper4.jpeg)" },
+  { id: "red-autumn", label: "Red Autumn", value: "url(/mac-wallpaper5.jpg)" },
+  { id: "scripture-noir", label: "Scripture Noir", value: "url(/mac-wallpaper6.jpg)" },
+  { id: "golden-peak", label: "Golden Peak", value: "url(/mac-wallpaper7.jpg)" },
 ];
 
 

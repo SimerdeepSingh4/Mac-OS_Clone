@@ -24,6 +24,7 @@
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.08);
   padding: 1.25rem;
   animation: wpSlideIn 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+
 }
 
 @keyframes wpSlideIn {
@@ -101,10 +102,11 @@
   width: 100%;
   aspect-ratio: 16 / 10;
   border-radius: 8px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
 }
+
 
 .wallpaper-picker-label {
   font-size: 0.75rem;
