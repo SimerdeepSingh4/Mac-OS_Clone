@@ -51,6 +51,6 @@
     "description": "Interactive web-based canvas tool for creating and manipulating shapes and text with multi-format export options.",
     "tags": ["Vanilla JS", "HTML5 Canvas", "CSS3", "Local Storage"],
     "repoLink": "https://github.com/SimerdeepSingh4/Figma-Clone",
-    "demoLink": null
+    "demoLink": "https://figma-project-editor.vercel.app/"
   }
 ]
