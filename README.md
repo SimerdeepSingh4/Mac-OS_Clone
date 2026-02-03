@@ -27,7 +27,7 @@ High-fidelity macOS UI implemented with React and Vite, emphasizing subtle inter
 * **🎛️ Control Center:** Real-time volume and brightness sliders with interactive toggles.
 * **🖼️ Personalization:** Integrated Wallpaper Picker with persistence via `localStorage`.
 * **🖱️ Context Intelligence:** Desktop-wide custom right-click menus for quick actions.
-* **📱 Built-in Apps:** GitHub Feed, CLI Emulator, Notes, and a mock Spotify integration.
+* **📱 Built-in Apps:** GitHub Feed, Terminal Emulator (powered by react-console-emulator), Notes, and Spotify Embedded Player integration.
 
 ---
 
