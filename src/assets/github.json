@@ -42,7 +42,7 @@
     "description": "Real-time voting app with WebSocket-powered live results and interactive charts.",
     "tags": ["React", "Socket.IO", "MongoDB", "Framer Motion", "Shadcn UI"],
     "repoLink": "https://github.com/SimerdeepSingh4/Real-Time-Voting-App",
-    "demoLink": "https://real-time-voting-app-beta.vercel.app/"
+    "demoLink": null
   },
   {
     "id": 6,

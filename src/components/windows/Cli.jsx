@@ -5,7 +5,7 @@ import "./cli.scss";
 
 
 
-const Cli = ({windowName, setWindowState, windowProps}) => {
+const Cli = ({ windowName, setWindowState, windowProps }) => {
 
     const commands = {
         whoami: {
@@ -24,25 +24,57 @@ const Cli = ({windowName, setWindowState, windowProps}) => {
             fn: () => `
 Frontend : React, JavaScript, HTML, CSS
 Backend  : Node.js, Express, MongoDB
-Other    : Git, REST APIs, Linux basics
+Other    : Git, REST APIs
       `,
+        },
+        stack: {
+            description: "Frontend stack used in this system",
+            fn: () => `
+Framework : React
+Build Tool: Vite
+Styling   : SCSS (modular & animated UI)
+UI Logic  : Custom window manager + state context
+UX Focus  : Desktop-first interactions & performance
+  `,
         },
 
         projects: {
-            description: "Show projects",
+            description: "Highlighted projects",
             fn: () => `
-• Mentora – LMS platform for students & instructors
-• MCP Tool – AI-powered automation & social media posting
-• Portfolio CLI – You’re using it right now 😉
-      `,
+• macOS Web Clone — Desktop UI, window manager, dock
+• Mentora — LMS for students & instructors
+• MCP Tool — Terminal-based AI automation
+• Real-Time Chess — Multiplayer with Socket.IO
+Type "project <name>" for details
+  `,
         },
 
         contact: {
             description: "How to contact me directly",
             fn: () => `
-Email : simerdeep@example.com
-Phone : +91-XXXXXXXXXX
+Email : simerdeepsingh567@gmail.com
+Phone : +91-7455897944
 Location : India
+  `,
+        },
+
+        os: {
+            description: "About this environment",
+            fn: () => `
+macOS Web Clone
+Built with React + Vite
+Desktop-first experience
+Running inside a browser
+  `,
+        },
+        neofetch: {
+            description: "Display system information",
+            fn: () => `
+OS: macOS Web Clone
+Host: Browser Environment
+Shell: react-console-emulator
+Frontend: React + Vite
+Developer: Simerdeep Singh
   `,
         },
 
@@ -51,12 +83,22 @@ Location : India
             description: "Show current time",
             fn: () => new Date().toLocaleString(),
         },
+        roadmap: {
+            description: "Planned enhancements for this macOS environment",
+            fn: () => `
+• AI-assisted terminal commands inside the OS
+• Spotlight search with natural language input
+• Smarter window snapping & focus management
+• App-level state persistence across sessions
+• Performance optimization for multi-window usage
+  `,
+        },
 
         social: {
             description: "Social links",
             fn: () => `
-GitHub  : github.com/yourusername
-Twitter : x.com/yourusername
+GitHub  : https://github.com/SimerdeepSingh4
+LinkedIn : https://www.linkedin.com/in/simerdeep-singh-gandhi/
       `,
         },
     };
@@ -68,8 +110,8 @@ Twitter : x.com/yourusername
                 <Terminal
                     commands={commands}
                     welcomeMessage={`👋 Welcome, I'm Simerdeep
-                        This is a portfolio terminal.
-                        Type "help" to explore.`}
+macOS-style portfolio terminal
+Type "help" to explore commands.`}
                     promptLabel={"simerdeepsingh:~$"}
                     promptLabelStyle={{ color: "#00ff00" }}
                 />
