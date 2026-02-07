@@ -9,7 +9,7 @@ const WALLPAPERS = [
   { id: "mount-fuji", label: "Mount Fuji", value: "url(/mac-wallpaper3.jpeg)" },
   { id: "cinque-terre", label: "Cinque Terre", value: "url(/mac-wallpaper4.jpeg)" },
   { id: "red-autumn", label: "Red Autumn", value: "url(/mac-wallpaper5.jpg)" },
-  { id: "scripture-noir", label: "Scripture Noir", value: "url(/mac-wallpaper6.jpg)" },
+  { id: "pink-supermoon", label: "Pink Moon", value: "url(/mac-wallpaper8.jpg)" },
   { id: "golden-peak", label: "Golden Peak", value: "url(/mac-wallpaper7.jpg)" },
 ];
 
