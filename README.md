@@ -9,7 +9,7 @@
 
 **A professional, modular, and pixel-perfect macOS-style desktop environment.** Experience the fluidity of macOS directly in your browser. Built for high performance and visual fidelity.
 
-[**Live Demo**](https://simerdeep-portfolio.vercel.app/) • [**Report Bug**](https://github.com/SimerdeepSingh4/mac-os/issues) • [**Request Feature**](https://github.com/SimerdeepSingh4/mac-os/issues)
+[**Live Demo**](mac-os-clone-kk32.vercel.app)
 
 </div>
 
